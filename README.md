@@ -19,6 +19,15 @@ Create Console Application project in VS.
  read number of HTTP Error (400, 401,402, ...) and write the name of this error (Declare enum HTTPError)
 declare struct Dog with fields Name, Mark, Age. Declare variable myDog of Dog type and read values for it. Output myDos into console. (Declare method ToString in struct)
 
+Task 3
+
+Input a and b are two integers. Calculate how many integers in the range [a..b] are divided by 3 without remainder.
+Input a character string. Print each second character
+Input the name of the drink (coffee, tea, juice, water). Print the name of the drink and its price.
+Input a sequence of positive integers (to the first negative). Calculate the arithmetic average of the entered numbers.
+Check whether the entered year is a leap.
+Find the sum of digits of the entered integer number
+Check whether the entered integer number contains only odd numbers
 
 Homework 1
 
@@ -26,3 +35,27 @@ Create Console Application project in VS. In method Main() write code for solvin
 define integer variable a. Read the value of a from console and calculate area and perimetr of square with length a. Output obtained results.
 define string variable name and integer value age. Output question "What is your name?";Read the value name and output next question: "How old are you,(name)?". Read age and write whole information  
 Read double number r and calculate the length (l=2*pi*r), area (S=pi*r*r) and volume (4/3*pi*r*r*r) of a circle of given r 2. 
+
+Homework 3
+
+a) Read the text as a string value and calculate the counts of characters 'a', 'o', 'i', 'e' in this text.
+b) Ask user to enter the number of month. Read the value and write the amount of days in this month.
+c) Input 10 integer numbers. Calculate the sum of first 5 elements if they are positive or product of last 5 element in  the other case.
+
+Homework 4
+
+Create class Person.
+    Class Person should consists of
+              a) two private fields: name and birthYear (the birthday year).As a type for this field you may use DataTime type.)
+              b) two properties for access to these fields (only get)
+              c) default constructor and constructor with 2 parameters 
+              d) methods:
+                    - Age() - to calculate the age of person
+                    -Input() - to input information about person
+                  	-ChangeName() - to change the name of person
+                 	-ToString() 
+                   	-Output() - to output information about person (call ToString())
+                 	- operator== (equal by name)
+     In the method Main() create 6 objects of Person type and input information about them.  Then calculate and write to console the name and Age of each person; Change the name of persons, which Age is less then 16, to "Very Young".
+Output information about all persons. 
+Find and output information about Persons with the same names (use ==)
