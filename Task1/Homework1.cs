@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CSharpCore
 {
-    class Task1
+    class Homework1
     {
-        public void DemoTask1()
+        public void DemoHomework1()
         {
             try
             {
@@ -72,7 +72,7 @@ namespace CSharpCore
 
                 Console.WriteLine("Enter second value:");
                 int number2 = Convert.ToInt32(Console.ReadLine());
-                if (number1>0 && number2>0)
+                if (number1 > 0 && number2 > 0)
                 {
                     Console.WriteLine("Two numbers are poitive");
                 }

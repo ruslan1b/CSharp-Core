@@ -1,8 +1,7 @@
 ﻿using System;
-using Task1;
 
 
-namespace Task1
+namespace CSharpCore
 {
     class Program
     {
@@ -11,28 +10,34 @@ namespace Task1
             try
             {
                 /*
-                Define integer variables a and b.
-                Read values a and b from Console and calculate: a+b, a-b, a*b, a/b.
-                Output obtained results.
+                SoftServe C# Core OOP Course: Tasks and Homework
                  */
-                Console.WriteLine("Enter value tasks or homeworks in patern: T1 or H2");                
-                string answer = Console.ReadLine();
+                bool flag = true;
+                while (flag) {
+                    Console.WriteLine("Enter value tasks or homeworks in patern: T1 or H2");
+                    string answer = Console.ReadLine();
 
-                switch(answer)
-                {
-                    case "T1":
-                        Task1 demo = new Task1();
-                        demo.DemoTask1();
-                        break;
-                    //case "T2":
-                    //    Task2 demo = new Task2();
-                    //    demo.DemoTask2();
-                    //    break;
+                    switch (answer)
+                    {
+                        case "T1":
+                            Task1 task1 = new Task1();
+                            task1.DemoTask1();
+                            flag = false;
+                            break;
+                        //case "T2":
+                        //    Task2 demo = new Task2();
+                        //    demo.DemoTask2();
+                        //    break;
 
-                    //case "H1":
-                    //    Homework2 demo = new Homework2();
-                    //    demo.DemoHomework2();
-                    //    break;
+                        case "H1":
+                            Homework1 homework1 = new Homework1();
+                            homework1.DemoHomework1();
+                            break;
+                        default:
+                            Console.WriteLine("This value was not found or not corect");
+                            flag = true;
+                            break;
+                    }
                 }
                 
 
