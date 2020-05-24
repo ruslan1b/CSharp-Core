@@ -11,9 +11,9 @@ namespace CSharpCore
             try
             {
                 /*
-                Define integer variables a and b.
-                Read values a and b from Console and calculate: a+b, a-b, a*b, a/b.
-                Output obtained results.
+                Define integer variable a.
+                Read the value of a from console and calculate area and perimetr of square with length a.
+                Output obtained results
                  */
                 Console.WriteLine("Enter value a");
                 int a = Convert.ToInt32(Console.ReadLine());
@@ -37,16 +37,19 @@ namespace CSharpCore
                     Console.WriteLine("Сannot be divided by 0!");
 
                 /*
-                 Output question “How are you?“.
-                Define string variable answer.
-                Read the value answer and output: “You are (answer)". 
+                 Define string variable name and integer value age.
+                Output question "What is your name?";
+                Read the value name and output next question: "How old are you,(name)?".
+                Read age and write whole information. 
                  */
                 Console.WriteLine("How are you?");
                 string answer = Console.ReadLine();
                 Console.WriteLine($"You are {answer}");
 
                 /*
-                 Read 3 variables of char type. Write message: “You enter (first char), (second char), (3 char)” 
+                 Read double number r and calculate the length (l=2*pi*r),
+                area (S=pi*r*r) and volume (4/3*pi*r*r*r) of a circle of given r 2. 
+ 
                  */
                 Console.WriteLine(" Enter three type char values");
 
@@ -61,10 +64,7 @@ namespace CSharpCore
 
                 Console.WriteLine($"You enter: {numberChar1}, {numberChar2}, {numberChar3}");
 
-                /*
-                 Enter 2 integer numbers.
-                Check if they are both positive – use bool expression
-                 */
+                
                 Console.WriteLine(" Enter two type int values");
 
                 Console.WriteLine("Enter first value:");

@@ -14,7 +14,8 @@ namespace CSharpCore
                  */
                 bool flag = true;
                 while (flag) {
-                    Console.WriteLine("Enter value tasks or homeworks in patern: T1 or H2");
+                    Console.WriteLine("Enter value tasks or homeworks in patern: T1 or H3" +
+                        " from list: T1, T2, T3, H1, H3, H4");
                     string answer = Console.ReadLine();
 
                     switch (answer)
@@ -34,10 +35,13 @@ namespace CSharpCore
                             homework1.DemoHomework1();
                             break;
                         default:
-                            Console.WriteLine("This value was not found or not corect");
                             flag = true;
+                            Console.WriteLine("This value was not found or not corect");
+                            Console.WriteLine("Or press <ESC> to exit...");
                             break;
                     }
+                    if (Console.ReadKey().Key == ConsoleKey.Escape)
+                        break;
                 }
                 
 
