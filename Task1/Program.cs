@@ -25,10 +25,10 @@ namespace CSharpCore
                             task1.DemoTask1();
                             flag = false;
                             break;
-                        //case "T2":
-                        //    Task2 demo = new Task2();
-                        //    demo.DemoTask2();
-                        //    break;
+                        case "T2":
+                            Task2 demo = new Task2();
+                            demo.DemoTask2();
+                            break;
 
                         case "H1":
                             Homework1 homework1 = new Homework1();
