@@ -6,6 +6,8 @@ namespace CSharpCore
 {
     class Task2
     {
+        enum TestCaseStatus { Pass, Fail, Blocked, Wp, Unexecuted };
+
         public void DemoTask2()
         {
             try
@@ -14,7 +16,10 @@ namespace CSharpCore
                 Identify enum TestCaseStatus (Pass, Fail, Blocked, WP, Unexecuted).
                 Assign status “Pass” for the variable  test1Status and print the value of the variable console.
                  */
-                Console.WriteLine("Enter value a");
+                var test1Status = TestCaseStatus.Pass;
+                Console.WriteLine(test1Status);
+
+        Console.WriteLine("Enter value a");
                 int a = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Enter value b");
