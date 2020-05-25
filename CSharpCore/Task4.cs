@@ -59,7 +59,7 @@ namespace CSharpCore
             }
         }
         Car Ford = new Car();
-        Ford.Input();
-                Ford.Print();
+        //Ford.Input();
+        //Ford.Print();
     }
 }

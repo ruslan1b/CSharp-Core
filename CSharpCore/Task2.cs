@@ -50,6 +50,20 @@ namespace CSharpCore
             GatewayTimeout = 504
         };
 
+        struct Dog
+        {
+            public string Name;
+            public string Mark;
+            public int Age;
+
+            //override ToString
+            public void To_String()
+            {
+                
+                Console.WriteLine($"The dog's name: {Name}, mark: {Mark}, and age: {Age}");
+            }
+        }
+
         public void DemoTask2()
         {
             try
@@ -122,6 +136,7 @@ namespace CSharpCore
                         Console.WriteLine($"HTTP Error {error}: Gateway Timeout");
                         break;
                 }
+                Console.WriteLine("****************\n");
 
                 /*
                  declare struct Dog with fields Name, Mark, Age.
@@ -129,6 +144,17 @@ namespace CSharpCore
                 Output myDos into console.
                 (Declare method ToString in struct)
                 */
+
+                Dog myDog;
+                Console.WriteLine("Enter name of dog");
+                myDog.Name = Console.ReadLine();
+                Console.WriteLine("Enter mark of dog");
+                myDog.Mark = Console.ReadLine();
+                Console.WriteLine("Enter age of dog");
+                myDog.Age =Convert.ToInt32(Console.ReadLine());
+
+                myDog.To_String();
+                
 
             }
             catch (Exception e)
