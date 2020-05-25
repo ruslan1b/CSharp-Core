@@ -25,6 +25,7 @@ namespace CSharpCore
                             task1.DemoTask1();
                             flag = false;
                             break;
+
                         case "T2":
                             Task2 demo = new Task2();
                             demo.DemoTask2();
@@ -34,6 +35,12 @@ namespace CSharpCore
                             Homework1 homework1 = new Homework1();
                             homework1.DemoHomework1();
                             break;
+
+                        case "H3":
+                            Homework3 homework3 = new Homework3();
+                            homework3.DemoHomework3();
+                            break;
+
                         default:
                             flag = true;
                             Console.WriteLine("This value was not found or not corect");
