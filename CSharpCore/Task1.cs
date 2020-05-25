@@ -36,6 +36,8 @@ namespace CSharpCore
                 else
                     Console.WriteLine("Сannot be divided by 0!");
 
+                Console.WriteLine("****************\n");
+
                 /*
                  Output question “How are you?“.
                 Define string variable answer.
@@ -44,6 +46,8 @@ namespace CSharpCore
                 Console.WriteLine("How are you?");
                 string answer = Console.ReadLine();
                 Console.WriteLine($"You are {answer}");
+
+                Console.WriteLine("****************\n");
 
                 /*
                  Read 3 variables of char type. Write message: “You enter (first char), (second char), (3 char)” 
@@ -60,6 +64,8 @@ namespace CSharpCore
                 char numberChar3 = Convert.ToChar(Console.ReadLine());
 
                 Console.WriteLine($"You enter: {numberChar1}, {numberChar2}, {numberChar3}");
+
+                Console.WriteLine("****************\n");
 
                 /*
                  Enter 2 integer numbers.
