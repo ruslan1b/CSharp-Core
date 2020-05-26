@@ -59,10 +59,31 @@ namespace CSharpCore
                  Input 10 integer numbers.
                 Calculate the sum of first 5 elements if they are positive or product of last 5 element in  the other case.
                  */
+                int[] nums = new int[10];
 
                 for(int i=0; i<10; i++)
                 {
                     Console.WriteLine($"Enter the number {i}");
+                    nums[i] = Convert.ToInt32(Console.ReadLine());
+                }
+
+                int sum = 0;
+                int prod =1;
+
+                
+
+                foreach(int x in nums)
+                {
+                    //for (int i = 0; i < 5; i++)
+                    //{
+                    //    sum = 0;
+                    //    while (nums[i] > 0)
+                    //    {
+                    //        sum
+                    //    }
+                    //}
+                    //Console.WriteLine(x);
+                    //if()
                 }
 
             }
