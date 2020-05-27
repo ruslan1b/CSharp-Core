@@ -74,16 +74,19 @@ namespace CSharpCore
 
                 foreach(int x in nums)
                 {
-                    //for (int i = 0; i < 5; i++)
-                    //{
-                    //    sum = 0;
-                    //    while (nums[i] > 0)
-                    //    {
-                    //        sum
-                    //    }
-                    //}
-                    //Console.WriteLine(x);
-                    //if()
+                    if (nums[x] > 0)
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            sum = 0;
+                            while (nums[i] > 0)
+                            {
+                                sum = sum + nums[i];
+                            }
+                        }
+                    }
+                    Console.WriteLine(x);
+                    if ()
                 }
 
             }
