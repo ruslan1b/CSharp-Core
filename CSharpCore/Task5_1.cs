@@ -17,7 +17,7 @@ namespace CSharpCore
             bool canFly;
             public int Fly()
             {
-
+                return 5;
             }
         }
 
@@ -28,7 +28,7 @@ namespace CSharpCore
 
             public int Fly()
             {
-
+                return 6;
             }
 
         }

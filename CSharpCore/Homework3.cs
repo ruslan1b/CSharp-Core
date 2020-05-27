@@ -69,23 +69,35 @@ namespace CSharpCore
 
                 int sum = 0;
                 int prod =1;
+                int countNums = 0;
+                bool getFlag = true;
 
                 
 
                 foreach(int x in nums)
                 {
-                    //for (int i = 0; i < 5; i++)
-                    //{
-                    //    sum = 0;
-                    //    while (nums[i] > 0)
-                    //    {
-                    //        sum
-                    //    }
-                    //}
-                    //Console.WriteLine(x);
-                    //if()
+                    if(nums[x]>0 && getFlag == true && countNums<5)
+                    {                        
+                        sum = sum + nums[x];
+                        Console.WriteLine(sum);
+                    }
+                    else
+                    {
+                        getFlag = false;
+                        if(countNums>=6)
+                        {
+                            prod = prod * nums[x];
+                            Console.WriteLine(prod);
+                        }
+                            
+                    }
+                    countNums++;
                 }
 
+                
+                    
+                
+                    
             }
             catch (Exception e)
             {
