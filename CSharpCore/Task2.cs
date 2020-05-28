@@ -57,10 +57,10 @@ namespace CSharpCore
             public int Age;
 
             //override ToString
-            public void To_String()
+            public override string ToString()
             {
                 
-                Console.WriteLine($"The dog's name: {Name}, mark: {Mark}, and age: {Age}");
+                return ($"The dog's name: {Name}, mark: {Mark}, and age: {Age}");
             }
         }
 
@@ -151,7 +151,7 @@ namespace CSharpCore
                 Console.WriteLine("Enter mark of dog");
                 myDog.Mark = Console.ReadLine();
                 Console.WriteLine("Enter age of dog");
-                myDog.Age =Convert.ToInt32(Console.ReadLine());
+                myDog.Age =Console.ReadLine();
 
                 myDog.To_String();
                 

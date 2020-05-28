@@ -76,6 +76,7 @@ namespace CSharpCore
 
                 foreach(int x in nums)
                 {
+
                     if(nums[x]>0 && getFlag == true && countNums<5)
                     {                        
                         sum = sum + nums[x];
@@ -92,6 +93,7 @@ namespace CSharpCore
                             
                     }
                     countNums++;
+
                 }
 
                 
