@@ -151,9 +151,9 @@ namespace CSharpCore
                 Console.WriteLine("Enter mark of dog");
                 myDog.Mark = Console.ReadLine();
                 Console.WriteLine("Enter age of dog");
-                myDog.Age =Console.ReadLine();
+                myDog.Age = Convert.ToInt32(Console.ReadLine());
 
-                myDog.To_String();
+                myDog.ToString();
                 
 
             }
