@@ -78,11 +78,11 @@ namespace CSharpCore
                 {
                     if(countNums < 5)
                     {
-                        if (nums[x] >= 0 && getFlag == true)
+                        if (nums[x] >= 0 && getFlag == true) //Exeption: index was outside the bounds of the array, when num[x] <0
                         {
                             sum = sum + nums[x];
-                            Console.WriteLine(nums[x]);
-                            Console.WriteLine(x);
+                            //Console.WriteLine(nums[x]);
+                            //Console.WriteLine(x);
                         }
                         else
                             getFlag = false;

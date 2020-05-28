@@ -27,8 +27,13 @@ namespace CSharpCore
                             break;
 
                         case "T2":
-                            Task2 demo = new Task2();
-                            demo.DemoTask2();
+                            Task2 task2 = new Task2();
+                            task2.DemoTask2();
+                            break;
+
+                        case "T3":
+                            Task3 task3 = new Task3();
+                            task3.DemoTask3();
                             break;
 
                         case "H1":
