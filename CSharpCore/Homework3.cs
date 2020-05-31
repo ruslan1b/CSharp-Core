@@ -66,6 +66,7 @@ namespace CSharpCore
                     Console.WriteLine($"Enter the number {i}");
                     nums[i] = Convert.ToInt32(Console.ReadLine());
                 }
+                Console.WriteLine("\n");
 
                 int sum = 0;
                 int prod =1;
@@ -78,9 +79,9 @@ namespace CSharpCore
                 {
                     if(countNums < 5)
                     {
-                        if (nums[x] >= 0 && getFlag == true) //Exeption: index was outside the bounds of the array, when num[x] <0
-                        {
-                            sum = sum + nums[x];
+                        if (x >= 0 && getFlag == true)
+                        { 
+                            sum = sum + x;
                             //Console.WriteLine(nums[x]);
                             //Console.WriteLine(x);
                         }
@@ -91,16 +92,24 @@ namespace CSharpCore
                     {                        
                         if(countNums>=6)
                         {
-                            prod = prod * nums[x];                            
+                            prod = prod * x;                            
                         }                            
                     }
                     countNums++;
+
+                    Console.WriteLine(x);
+                    
+                    Console.WriteLine(getFlag);
+                    Console.WriteLine(sum);
+                    Console.WriteLine(prod);
+                    Console.WriteLine("****************\n");
+
                 }
 
-                if(getFlag == true)
-                   Console.WriteLine(sum);
+                if (getFlag == true)
+                   Console.WriteLine($"Sum: {sum}");
                 else
-                    Console.WriteLine(prod);
+                    Console.WriteLine($"Prod: {prod}");
 
 
 
