@@ -81,9 +81,7 @@ namespace CSharpCore
                     {
                         if (x >= 0 && getFlag == true)
                         { 
-                            sum = sum + x;
-                            //Console.WriteLine(nums[x]);
-                            //Console.WriteLine(x);
+                            sum = sum + x;                            
                         }
                         else
                             getFlag = false;
@@ -110,11 +108,6 @@ namespace CSharpCore
                    Console.WriteLine($"Sum: {sum}");
                 else
                     Console.WriteLine($"Prod: {prod}");
-
-
-
-
-
             }
             catch (Exception e)
             {
