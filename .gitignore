@@ -224,6 +224,7 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 *.ppt
+*.pptx
 *.png
 *.pdf
 
