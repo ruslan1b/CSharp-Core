@@ -105,9 +105,7 @@ namespace CSharpCore
                         int num = Convert.ToInt32(Console.ReadLine());
 
                         nums[index] = num;
-                        index++;
-
-                        //Console.WriteLine($"{nums[index]}\n");
+                        index++;                        
                     }
                     else
                         flag = false;
@@ -147,11 +145,12 @@ namespace CSharpCore
                 string numberInt = Console.ReadLine();
                 int sumNumberInt = 0;
                
-                foreach (int x in numberInt)
+                for(int i=0; i<numberInt.Length;i++)
                 {
-                    sumNumberInt += Convert.ToInt32(x);
+                    sumNumberInt += Convert.ToInt32(numberInt[i]);
+                    Console.WriteLine($"{numberInt[i]}");
                 }
-
+                
                 Console.WriteLine($"The sum entered integer number is: {sumNumberInt}\n");
                 Console.WriteLine("****************\n");
 
@@ -161,14 +160,19 @@ namespace CSharpCore
                 Console.WriteLine("Input integer number.\n");
 
                 string numberIntCheckOdd = Console.ReadLine();
-                
+                bool check = false;
 
-                foreach (int x in numberInt)
+                for (int i = 0; i < numberIntCheckOdd.Length; i++)
                 {
-                    sumNumberInt += Convert.ToInt32(x);
+                    if ((numberIntCheckOdd[i] + 1) % 2 != 0)
+                        check = true;
                 }
 
-                Console.WriteLine($"The sum entered integer number is: {sumNumberInt}\n");
+                if(check)
+                    Console.WriteLine($"The entered integer number {numberIntCheckOdd} not contains only odd numbers");
+                else
+                    Console.WriteLine($"The entered integer number {numberIntCheckOdd}contains only odd numbers");
+                
                 Console.WriteLine("****************\n");
             }
             catch (Exception e)
