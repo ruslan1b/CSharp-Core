@@ -46,6 +46,11 @@ namespace CSharpCore
                             homework3.DemoHomework3();
                             break;
 
+                        case "H4":
+                            Homework4 homework4 = new Homework4();
+                            homework4.DemoHomework4();
+                            break;
+
                         default:
                             flag = true;
                             Console.WriteLine("This value was not found or not corect");
