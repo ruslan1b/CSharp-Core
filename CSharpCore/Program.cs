@@ -14,6 +14,7 @@ namespace CSharpCore
                  */
                 bool flag = true;
                 while (flag) {
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine("Enter value tasks or homeworks in patern: T1 or H3" +
                         " from list: T1, T2, T3, H1, H3, H4");
                     string answer = Console.ReadLine();
@@ -34,6 +35,16 @@ namespace CSharpCore
                         case "T3":
                             Task3 task3 = new Task3();
                             task3.DemoTask3();
+                            break;
+
+                        case "T71":
+                            Task7_1 task7_1 = new Task7_1();
+                            task7_1.DemoTask7_1();
+                            break;
+
+                        case "T72":
+                            Task7_2 task7_2 = new Task7_2();
+                            task7_2.DemoTask7_2();
                             break;
 
                         case "H1":
