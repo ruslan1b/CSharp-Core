@@ -120,12 +120,13 @@ namespace CSharpCore
             }
         }
 
-        static void JSONFormat(object obj, string name)
-        {            
-            using (FileStream fs = new FileStream(name, FileMode.OpenOrCreate))
-            {                
+        static void JSONFormat(PersonXml obj, string name)
+        {
+            
+            using (Stream fs = new FileStream(name, FileMode.OpenOrCreate, FileAccess.Write))
+            {
                 JsonSerializer.Serialize(obj, typeof(PersonXml));
-
+                
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Serialization JSON successful");
                 Console.WriteLine("****************\n");
