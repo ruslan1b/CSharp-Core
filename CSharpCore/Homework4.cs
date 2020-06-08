@@ -4,7 +4,9 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Xml.Serialization;
+using System.Threading.Tasks;
 
 namespace CSharpCore
 {
@@ -83,7 +85,7 @@ namespace CSharpCore
                 XmlFormat(personXml, $"{personXml.Name}.xml");
 
                 PersonXml personJSON = new PersonXml("Alex", 39);
-                JSONFormat(personJSON, $"{personJSON.Name}.json");
+                JSONFormatAsync(personJSON, $"{personJSON.Name}.json");
 
             }
             catch (Exception e)
@@ -120,16 +122,17 @@ namespace CSharpCore
             }
         }
 
-        static void JSONFormat(PersonXml obj, string name)
+        static async Task JSONFormatAsync(PersonXml obj, string name)
         {
-            
+            string json;
             using (Stream fs = new FileStream(name, FileMode.OpenOrCreate, FileAccess.Write))
             {
-                JsonSerializer.Serialize(obj, typeof(PersonXml));
-                
+                await JsonSerializer.SerializeAsync<PersonXml>(fs, obj);                
+
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Serialization JSON successful");
+                Console.WriteLine("Serialization JSON successful");                
                 Console.WriteLine("****************\n");
+                fs.Close();
             }
         }
     }
