@@ -44,7 +44,7 @@ Read double number r and calculate the length (l=2*pi*r), area (S=pi*r*r) and vo
 
 ## Homework 4
 
- 1. Create class Person.**
+ 1. Create class Person.
     **Class Person should consists of**
     - two private fields: name and birthYear (the birthday year). As a type for this field you may use      DataTime type.)
     - two properties for access to these fields (only get)
