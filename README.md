@@ -1,5 +1,5 @@
 # SoftServe IT Academy C# Core OOP Course
- SoftServe IT Academy course
+ SoftServe IT Academy course :+1:
 
 ## Task 1:
  
