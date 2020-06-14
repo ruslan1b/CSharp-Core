@@ -47,6 +47,11 @@ namespace CSharpCore
                             task7_2.DemoTask7_2();
                             break;
 
+                        case "T9":
+                            Task9 task9 = new Task9();
+                            task9.DemoTask9();
+                            break;
+
                         case "H1":
                             Homework1 homework1 = new Homework1();
                             homework1.DemoHomework1();
