@@ -44,6 +44,7 @@ Read double number r and calculate the length (l=2*pi*r), area (S=pi*r*r) and vo
 
 ## Homework 4
 
+<<<<<<< HEAD
  1. Create class Person.**
     **Class Person should consists of**
     - two private fields: name and birthYear (the birthday year). As a type for this field you may use      DataTime type.)
@@ -59,6 +60,7 @@ Read double number r and calculate the length (l=2*pi*r), area (S=pi*r*r) and vo
   2. In the method Main() create 6 objects of Person type and input information about them.  Then calculate and write to console the name and Age of each person; Change the name of persons, which Age is less then 16, to "Very Young".
     - Output information about all persons. 
     - Find and output information about Persons with the same names (use ==)
+
 
 ## Homework 10
 
